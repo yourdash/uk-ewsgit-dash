@@ -1,0 +1,13 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@yourdash/backend':
+        specifier: link:C:/Users/ewsgi/projects/instance/backend
+        version: link:../../instance/backend

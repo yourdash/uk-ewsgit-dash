@@ -4,6 +4,6 @@
   "scripts": {},
   "type": "module",
   "dependencies": {
-    "@yourdash/backend": "workspace:*"
+    "@yourdash/backend": "link:C:/Users/ewsgi/projects/instance/backend"
   }
 }

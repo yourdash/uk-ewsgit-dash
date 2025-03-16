@@ -6,7 +6,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./dashApplication.module.scss";
 import { z } from "zod";
-import ApplicationPanelContext from "@yourdash/panel-context/src/index.js";
+import ApplicationPanelContext from "@yourdash/web/src/lib/panelContext.ts";
 
 const DashApplication: React.FC = () => {
   const applicationPanelContext = React.useContext(ApplicationPanelContext);

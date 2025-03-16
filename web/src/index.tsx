@@ -7,7 +7,7 @@ import React, { useEffect } from "react";
 import { Routes, Route } from "react-router";
 import DashApplication from "./dashApplication";
 import DASH_ICON from "../../assets/icon.png";
-import ApplicationPanelContext from "@yourdash/panel-context/src/index.js";
+import ApplicationPanelContext from "@yourdash/web/src/lib/panelContext.ts";
 
 const DashRouter: React.FC = () => {
   const applicationPanelContext = React.useContext(ApplicationPanelContext);
