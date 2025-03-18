@@ -143,3 +143,15 @@
   width: 100%;
   gap: $UKGap;
 }
+
+.parameterContainer {
+  gap: $UKGap;
+
+  .heading {
+    margin-bottom: $UKGap;
+  }
+
+  .input {
+    margin-bottom: $UKGap;
+  }
+}

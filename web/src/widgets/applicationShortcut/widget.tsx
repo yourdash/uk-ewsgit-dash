@@ -3,33 +3,30 @@
  * YourDash is licensed under the MIT License. (https://mit.ewsgit.uk)
  */
 
-import toAuthImgUrl from "@yourdash/csi/toAuthImgUrl.ts";
-import Card from "@yourdash/uikit/src/components/card/UKCard.js";
-import Image from "@yourdash/uikit/src/components/image/UKImage.js";
-import Text from "@yourdash/uikit/src/components/text/UKText.js";
 import React from "react";
-import { IApplicationShortcutWidget } from "../../../shared/types/widgets/applicationShortcut";
 import styles from "./widget.module.scss";
 import { useNavigate } from "react-router-dom";
+import { toAuthImgUrl } from "@yourdash/tunnel";
+import { UKCard, UKImage, UKText } from "@yourdash/uikit";
 
-const Widget: React.FC<{ data: IApplicationShortcutWidget["data"] }> = ({ data }) => {
+const Widget: React.FC<{ data: { url: string, icon: string, name: string} }> = ({ data }) => {
   const navigate = useNavigate();
 
   return (
-    <Card
+    <UKCard
       className={styles.widget}
       onClick={() => {
         navigate(data.url);
       }}
     >
-      <Image
+      <UKImage
         noRounding={true}
         className={styles.img}
         src={toAuthImgUrl(data.icon)}
         accessibleLabel={""}
       />
-      <Text text={data.name} />
-    </Card>
+      <UKText text={data.name} />
+    </UKCard>
   );
 };
 
