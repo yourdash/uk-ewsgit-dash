@@ -4,7 +4,7 @@
   "scripts": {},
   "type": "module",
   "dependencies": {
-    "@yourdash/backend": "link:C:/Users/ewsgi/projects/instance/backend",
+    "@yourdash/backend": "link:C:/Users/ewsgi/projects/yourdash/instance/backend",
     "zod": "^3.24.2"
   }
 }

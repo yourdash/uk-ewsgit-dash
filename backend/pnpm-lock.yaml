@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@yourdash/backend':
-        specifier: link:C:/Users/ewsgi/projects/instance/backend
+        specifier: link:C:/Users/ewsgi/projects/yourdash/instance/backend
         version: link:../../instance/backend
       zod:
         specifier: ^3.24.2
