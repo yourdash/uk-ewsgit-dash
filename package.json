@@ -1,7 +1,10 @@
 {
-  "name": "@yourdash/application-uk-ewsgit-dash",
+  "name": "@yourdash/uk-ewsgit-dash",
   "scripts": {
     "dev-web": "pnpm run -C \"./web\" dev"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3"
   },
   "author": "Ewsgit",
   "private": true,
