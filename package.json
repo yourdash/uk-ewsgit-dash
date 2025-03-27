@@ -1,7 +1,11 @@
 {
   "name": "@yourdash/uk-ewsgit-dash",
   "scripts": {
-    "dev-web": "pnpm run -C \"./web\" dev"
+    "dev-web": "pnpm run -C \"./web\" dev",
+    "postinstall": "concurrently -i \"pnpm -C web install\" \"pnpm -C backend install\" \"pnpm -C standalone install\""
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
   },
   "devDependencies": {
     "prettier": "^3.5.3"
